@@ -1,0 +1,8 @@
+# reset your terminal session so things can scroll again
+tput rmcup
+# or if that doesn't work
+tput reset
+
+# reset display settings if your not getting the right resolutions when dealing with multiple displays
+xrandr -s 0
+
