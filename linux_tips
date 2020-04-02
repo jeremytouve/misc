@@ -6,3 +6,5 @@ tput reset
 # reset display settings if your not getting the right resolutions when dealing with multiple displays
 xrandr -s 0
 
+# get gnome to switch windows with alt-tab, not just applications (seriously who thought this should not be defualt)
+https://superuser.com/questions/394376/how-to-prevent-gnome-shells-alttab-from-grouping-windows-from-similar-apps
