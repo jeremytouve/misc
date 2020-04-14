@@ -11,3 +11,6 @@ https://superuser.com/questions/394376/how-to-prevent-gnome-shells-alttab-from-g
 
 # add yourself to kvm group 
 sudo usermod -aG kvm $(whoami) && sudo reboot
+
+# linux tcp tuning
+https://www.cyberciti.biz/faq/linux-tcp-tuning/
