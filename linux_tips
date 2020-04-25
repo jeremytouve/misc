@@ -10,7 +10,24 @@ xrandr -s 0
 https://superuser.com/questions/394376/how-to-prevent-gnome-shells-alttab-from-grouping-windows-from-similar-apps
 
 # add yourself to kvm group 
-sudo usermod -aG kvm $(whoami) && sudo reboot
+sudo usermod -aG kvm $(whoami)
+sudo reboot
 
 # linux tcp tuning
 https://www.cyberciti.biz/faq/linux-tcp-tuning/
+
+# reset iptables to do nothing
+iptables -F
+iptables -X
+iptables -t nat -F
+iptables -t nat -X
+iptables -t mangle -F
+iptables -t mangle -X
+iptables -P INPUT ACCEPT
+iptables -P OUTPUT ACCEPT
+iptables -P FORWARD ACCEPT
+
+#check ip tables rules counts
+iptables -L -v -n
+#in real time
+watch -n 2 -d iptables -nvL
