@@ -31,3 +31,6 @@ iptables -P FORWARD ACCEPT
 iptables -L -v -n
 #in real time
 watch -n 2 -d iptables -nvL
+
+# open github web with cli command
+https://github.com/paulirish/git-open
