@@ -49,3 +49,6 @@ https://github.com/paulirish/git-open
 #xterm and shell heaven
 bashit with Pete theme
 terminator with Brogrammer theme (https://github.com/EliverLara/terminator-themes)
+
+#docker add group
+sudo usermod -aG docker $USER
