@@ -52,3 +52,6 @@ terminator with Brogrammer theme (https://github.com/EliverLara/terminator-theme
 
 #docker add group
 sudo usermod -aG docker $USER
+
+#netcat
+nc -z -v x.x.x.x 20-80 2>&1 | grep succeeded
