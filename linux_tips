@@ -64,3 +64,6 @@ networkctl status
 networkctl list
 networkctl reload
 networkctl (force)renew X
+
+#more readable vimdiff
+set t_Co=16
