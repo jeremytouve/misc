@@ -67,3 +67,6 @@ networkctl (force)renew X
 
 #more readable vimdiff
 set t_Co=16
+
+# get history to show time stamps
+export HISTTIMEFORMAT="%d/%m/%y %T
