@@ -70,3 +70,6 @@ set t_Co=16
 
 # get history to show time stamps
 export HISTTIMEFORMAT="%d/%m/%y %T
+
+# linux MAC stats
+nertstats --interfaces
