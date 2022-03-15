@@ -72,4 +72,12 @@ set t_Co=16
 export HISTTIMEFORMAT="%d/%m/%y %T
 
 # linux MAC stats
-nertstats --interfaces
+netstats --interfaces
+
+#reset usb serial interfaces (write to script, run as sudo)
+for X in /sys/bus/usb/devices/*; do 
+    echo "$X"
+    cat "$X/idVendor" 2>/dev/null 
+    cat "$X/idProduct" 2>/dev/null
+    echo
+done
