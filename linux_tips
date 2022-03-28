@@ -81,3 +81,6 @@ for X in /sys/bus/usb/devices/*; do
     cat "$X/idProduct" 2>/dev/null
     echo
 done
+
+#gratuitous arp
+arping -U {IP-HERE} -I {Interface-Name-HERE}
