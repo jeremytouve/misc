@@ -55,6 +55,8 @@ sudo usermod -aG docker $USER
 
 #netcat
 nc -z -v x.x.x.x 20-80 2>&1 | grep succeeded
+#nmap range check
+nmap -T5 -sP 10.16.0.128-192
 
 #systemd networkd
 systemctl daemon-reload
