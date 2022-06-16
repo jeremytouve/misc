@@ -86,3 +86,6 @@ done
 
 #gratuitous arp
 arping -U {IP-HERE} -I {Interface-Name-HERE}
+
+#stop annoying syslog to console
+dmesg -D
