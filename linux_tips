@@ -89,3 +89,6 @@ arping -U {IP-HERE} -I {Interface-Name-HERE}
 
 #stop annoying syslog to console
 dmesg -D
+
+#stop libvirt annoyance
+export LIBVIRT_DEFAULT_URI='qemu:///system'
