@@ -92,3 +92,6 @@ dmesg -D
 
 #stop libvirt annoyance
 export LIBVIRT_DEFAULT_URI='qemu:///system'
+
+#when you don't have a log shipper to help searching tons of syslog:
+for i in *.gz; do sudo zgrep -ql "some error msg" $i; done
